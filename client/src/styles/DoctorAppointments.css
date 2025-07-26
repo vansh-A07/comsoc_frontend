@@ -1,0 +1,118 @@
+.doctor-appointments-page {
+  display: flex;
+  background-color: #f0f2f7;
+  min-height: 100vh;
+}
+
+.appointments-main {
+  margin-left: 250px;
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #3F26A2;
+}
+
+.chart-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  height: 50vh;
+  overflow: auto;
+}
+
+.chart-wrapper canvas {
+  height: 100% ;
+  max-height: 100%;
+}
+
+.appointment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.appointment-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.status-badge.yellow { background-color: #6c757d; color: #333; }
+.status-badge.green { background-color: #ffc107; }
+.status-badge.red { background-color: #dc3545; }
+.status-badge.blue { background-color: #28a745; }
+
+.status-update {
+  margin-top: 10px;
+}
+
+.status-update select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  color: #333;
+  margin-left: 8px;
+  min-width: 140px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.status-update select:hover {
+  background-color: #fff;
+  border-color: #aaa;
+}
+
+.status-update select:focus {
+  border-color: #3F26A2;
+  box-shadow: 0 0 0 3px rgba(63, 38, 162, 0.1);
+}
+
+.status-update label {
+  font-weight: 500;
+  color: #444;
+  margin-right: 6px;
+}
+
+
+.locked-select {
+  background-color: #f0f0f0;
+  color: #999;
+  border: 1px dashed #ccc;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.loading, .no-appointments {
+  font-style: italic;
+  color: #777;
+}

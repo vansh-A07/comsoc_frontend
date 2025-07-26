@@ -1,0 +1,344 @@
+.Doctor-dashboard {
+  width: 100%;
+  height: 100vh;
+  background-color: #DFE2F3;
+  display: flex;
+}
+
+.doctor-left {
+  margin-left: 200px;
+  padding-left: 40px;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.doctor-info {
+  margin-top: 10px;
+  width: 80%;
+  height: 200px;
+  background-color: #3F26A2;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  overflow: hidden;
+}
+
+.img-section {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-section .img {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.img img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;      
+  border-radius: 50%;     
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;  
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.info-section h2 {
+  font-weight: bold;
+}
+
+.appointment-section {
+  background: white;
+  height: 200px;
+  width: 70%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.appointment-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.appointment-card {
+  background-color: #f0f0ff;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.view-link {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #5A3FC0;
+  cursor: pointer;
+}
+
+.doctor-right {
+  margin-left: 40px;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chat-section {
+  margin-top: 10px;
+  width: 70%;
+  height: 400px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+}
+
+.chat {
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.chat:hover {
+  background-color: #ececec;
+}
+
+.chat-left {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.chat-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-right h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #222;
+}
+
+.chat-right p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.dashboard-header {
+  background-color: #5c4fcf;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.appointments-section h2 {
+  color: #5c4fcf;
+  margin-bottom: 20px;
+}
+
+.empty-state {
+  color: #777;
+  font-style: italic;
+}
+
+.appointments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.appointment-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.appointment-info h3 {
+  margin-bottom: 10px;
+}
+
+.status {
+  text-transform: capitalize;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.status.confirmed {
+  background-color: #d2f8d2;
+  color: #2e8b57;
+}
+.status.pending {
+  background-color: #fff2b2;
+  color: #a67c00;
+}
+.status.completed {
+  background-color: #d3d3d3;
+  color: #444;
+}
+.status.cancelled {
+  background-color: #fbd3d3;
+  color: #b30000;
+}
+
+.pending-reports-card {
+  background-color: #fff7e6;
+  border-left: 4px solid #f5a623;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 14px;
+  width: 330px;
+  position: relative;
+}
+
+.pending-reports-card h4 {
+  margin-bottom: 8px;
+  color: #d98400;
+}
+
+.view{
+    position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #5A3FC0;
+  cursor: pointer;
+}
+
+
+.edit-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #5c4fcf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-button:hover {
+  background-color: #483abd;
+}
+
+
+.analytics-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 24px 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  width: 80%;
+  max-width: 900px;
+  height: 200px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.analytics-header h3 {
+  font-size: 1.4rem;
+  color: #3F26A2;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.analytics-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat {
+  flex: 1;
+  min-width: 80px;
+  height: 90px;
+  background-color: #f5f7fc;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.stat:hover {
+  transform: translateY(-4px);
+}
+
+.stat h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.stat-today {
+  background-color: #e5e9ff;
+  border-left: 4px solid #3F26A2;
+}
+
+.stat-confirmed {
+  background-color: #e1f7e9;
+  border-left: 4px solid #2e7d32;
+}
+
+.stat-pending {
+  background-color: #fff7e6;
+  border-left: 4px solid #ff9800;
+}
+
+.stat-cancelled {
+  background-color: #ffeaea;
+  border-left: 4px solid #d32f2f;
+}

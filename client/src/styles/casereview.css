@@ -1,0 +1,77 @@
+.case-review-page {
+  display: flex;
+  background-color: #f4f5fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.case-review-main {
+  margin-left: 250px;
+  flex: 1;
+  padding: 30px;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3F26A2;
+  margin-bottom: 25px;
+}
+
+.case-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.case-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.case-header h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin: 0;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status.pending {
+  background-color: #ffe0b2;
+  color: #a66a00;
+}
+
+.status.reviewed {
+  background-color: #c8e6c9;
+  color: #256029;
+}
+
+.review-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #5c4fcf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.review-btn:hover {
+  background-color: #453ac2;
+}

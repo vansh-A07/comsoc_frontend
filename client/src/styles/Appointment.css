@@ -1,0 +1,183 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.appointment{
+  width: 100vw;
+  height: 100vh;
+  background-color: #DFE2F3;
+  display: flex;
+}
+
+.appointment-container {
+  margin-left: 15vw;
+  width: 85vw;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background: #DFE2F3;
+}
+
+.card {
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.doctor-select {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.doctor-select:hover,
+.doctor-select:focus {
+  border-color: #7b61ff;
+  outline: none;
+  background-color: #fff;
+}
+
+.doctor-details p {
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+.rating {
+  color: #f5a623;
+  font-weight: bold;
+}
+
+
+.rating {
+  color: goldenrod;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.calendar .react-calendar {
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.calendar .react-calendar__tile--active {
+  background-color: #3F26A2;
+  color: white;
+}
+
+.calendar .selected-date {
+  background-color: #3F26A2;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.calendar-day-name {
+  text-align: center;
+  font-weight: bold;
+  color: #777;
+}
+
+.calendar-day, .calendar-empty {
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  background: #ccc;
+}
+
+.calendar-day.selected {
+  background: #3F26A2;
+  color: white;
+}
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.card textarea{
+  width: 85%;
+  margin-top: 10px;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+}
+
+.slot-button {
+  padding: 8px 12px;
+  border: 1px solid #3F26A2;
+  background: white;
+  border-radius: 5px;
+  color: #3F26A2;
+  cursor: pointer;
+}
+
+.slot-button.selected {
+  background: #3F26A2;
+  color: white;
+}
+
+.book-button {
+  margin-top: 1rem;
+  padding: 10px 16px;
+  background: #3F26A2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.appointments-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.appointment-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.status.completed {
+  color: green;
+}
+
+.status.cancelled {
+  color: red;
+}

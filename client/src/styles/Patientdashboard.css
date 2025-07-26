@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Patient-dashboard{
+    width: 100%;
+    height: 100vh;
+    background-color: #DFE2F3;
+    display: flex;
+}
+
+.Patient-dashboard .dash-left{
+    margin-left: 200px;
+    padding-left: 40px;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dash-left .patient-info{
+    margin-top: 10px;
+    width: 80%;
+    height: 200px;
+    background-color: #3F26A2;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.info-left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-left .img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(156, 156, 156);
+}
+
+.img img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;      
+  border-radius: 50%;     
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;  
+}
+
+.info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.info-right h2{
+    font-weight: 1000;
+}
+
+.info-right p{
+    font-weight: 200;
+}
+.Appointments {
+  position: relative;
+  background: #ffffff;
+  height: 200px;
+  width: 70%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.Appointments h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.Appointments #view{
+  position: absolute;
+  color:#5A3FC0;
+  top: 75%;
+  left: 75%;
+  cursor: pointer;
+}
+
+.Appointments p{
+    color: "#888";
+    padding-Top: "30px";
+    padding-Left: "10px";
+}
+
+.app-list {
+  display: flex;
+  align-items: center;
+  background-color: #e8ebf7;
+  border-radius: 12px;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  transition: 0.2s ease;
+  gap: 16px;
+}
+
+.app-list:hover {
+  background-color: #dfe4f2;
+  scale: 1.02;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.app-date {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  min-width: 90px;
+}
+
+.app-description {
+  font-size: 15px;
+  color: #444;
+  flex: 1;
+}
+
+.track-order {
+  width: 80%;
+  height: 200px;
+  background-color: #3F26A2;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.track-order h3 {
+  margin: 0;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+.track-order p{
+    padding-left: 75%;
+    cursor: pointer;
+}
+
+.order-summary {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #333;
+
+}
+
+.order-item {
+  background-color: #f2f3ff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+
+.dash-right{
+    margin-left: 40px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.chats {
+  margin-top: 10px;
+  width: 70%;
+  height: 400px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+}
+
+.chat {
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.chat:hover {
+  background-color: #ececec;
+}
+
+.chats h3{
+margin-bottom: "10px";
+}
+
+.chat-left {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.chat-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-right h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #222;
+}
+
+.chat-right p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+
+.locate-doctors{
+        width: 80%;
+    height: 200px;
+    background-color: #3F26A2;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hospital-card {
+  background-color: #f4faff;
+  border: 1px solid #d0eaff;
+  width: 90%;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hospital-info {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
